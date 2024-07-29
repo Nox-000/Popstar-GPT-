@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 2px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.cell.empty {
+    background-color: transparent;
+    cursor: default;
+}
